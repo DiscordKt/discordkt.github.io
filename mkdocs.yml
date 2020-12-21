@@ -1,6 +1,7 @@
 site_name: DiscordKt
 theme: 
     name: material
+    logo: images/discordkt.png
     palette:
         scheme: slate
         primary: cyan
