@@ -1,6 +1,4 @@
-# Getting Started
-
-For full documentation, wait.
+DiscordKt is a Kotlin Discord library, built on top of Kord - a Kotlin Discord API.
 
 ### Installation
 
@@ -29,3 +27,16 @@ For full documentation, wait.
         <version>0.21.3</version>
     </dependency>
     ```
+
+### Starting up
+The start up procedure for DiscordKt is very simple, you just need to provide the token in order to get going.
+
+```kotlin
+fun main(args: Array<String>) {
+    val token = "your-bot-token"
+
+    bot(token) {
+      prefix { "+" }
+    }
+}
+```
