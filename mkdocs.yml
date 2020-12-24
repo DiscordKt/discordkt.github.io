@@ -1,7 +1,9 @@
 site_name: DiscordKt
+
 markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.superfences
+
 theme: 
     name: material
     logo: images/discordkt-logo.png

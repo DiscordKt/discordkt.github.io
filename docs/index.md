@@ -1,4 +1,4 @@
-DiscordKt is a Kotlin Discord library, built on top of Kord - a Kotlin Discord API.
+DiscordKt is a Kotlin Discord library, built on top of [Kord](https://github.com/kordlib/kord) - a Kotlin Discord API.
 
 ### Installation
 
