@@ -3,7 +3,6 @@ DiscordKt is a Kotlin Discord library, built on top of [Kord](https://github.com
 ### Installation
 
 === "build.gradle.kts"
-
     ```kotlin
     dependencies {
         implementation("me.jakejmattson:DiscordKt:0.21.3")
@@ -11,7 +10,6 @@ DiscordKt is a Kotlin Discord library, built on top of [Kord](https://github.com
     ```
 
 === "build.gradle"
-
     ```groovy
     dependencies {
         implementation 'me.jakejmattson:DiscordKt:0.21.3'
@@ -19,7 +17,6 @@ DiscordKt is a Kotlin Discord library, built on top of [Kord](https://github.com
     ```
 
 === "pom.xml"
-
     ```xml
     <dependency>
         <groupId>me.jakejmattson</groupId>

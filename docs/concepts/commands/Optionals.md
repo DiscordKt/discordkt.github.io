@@ -10,8 +10,4 @@ command("DisplayText") {
 }
 ```
 
-This accepts an optional `AnyArg`, meaning the command can be called with 0 or 1 arguments.
-
-The `optional` function can be called on any `ArgumentType`. We then provide a default value as a fallback if none is provided by the user. This default value is also type-safe, meaning that the type of default must match the output of the ArgumentType.
-
-In this case, when called with no arguments, the value of the text is `"Hello"`.
+This accepts an optional `AnyArg`, meaning the command can be called with 0 or 1 arguments. The `optional` function can be called on any `ArgumentType`. The provided default value will be used if no input is provided by the user. In this case, when called with no arguments, the value of the text is `"Hello"`.

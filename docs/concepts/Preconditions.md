@@ -1,6 +1,4 @@
-## Preconditions
-
-Preconditions are a way to validate state before you begin to process a command. You have access to the CommandEvent, from which you can access who invoked the command, where it was invoked, etc.
+Preconditions are a way to validate state before running a command. This can be used for things like permissions.
 
 ```kotlin
 fun botPrecondition() = precondition {
