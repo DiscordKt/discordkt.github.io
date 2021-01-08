@@ -27,11 +27,13 @@ Examples are used primarily for help menus. When help is invoked on a command, a
 
 ### ArgumentResult
 Each ArgumentType must return an `ArgumentResult` that matches the type expected by the argument. So in this case, we use `ArgumentResult<Int>` as our return type. The actual return can either be `Success` or `Error`:
-- **Error** - The parsing has failed. The input args could not be converted to the required type. The String provided will be sent as a message in the channel where the command was invoked.
-- **Success** - The parsing was successful. The input is consumed and the required type is returned.
+
+- `Error` - The parsing has failed. The input args could not be converted to the required type. The String provided will be sent as a message in the channel where the command was invoked.
+- `Success` - The parsing was successful. The input is consumed and the required type is returned.
 
 ### Convert
 The convert function is the logic behind every ArgumentType. This is what converts the user input into the desired type. It accepts the following:
-- **arg: String** - This is the relevant argument passed into the command. As each ArgumentType is processed, args are consumed from the list.
-- **args: List<String>** - This list contains all of the remaining arguments passed into a command.
-- **event: CommandEvent** - This is the invocation event for the command.
+
+- `arg: String` - This is the relevant argument passed into the command. As each ArgumentType is processed, args are consumed from the list.
+- `args: List<String>` - This list contains all of the remaining arguments passed into a command.
+- `event: CommandEvent<*>` - This is the invocation event for the command.
