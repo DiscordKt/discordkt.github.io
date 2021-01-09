@@ -11,3 +11,20 @@ theme:
         scheme: slate
         primary: cyan
         accent: cyan
+
+nav:
+    - index.md
+    - Concepts:
+        - Commands: 
+            - 'concepts/commands/Basics.md'
+            - 'concepts/commands/Input.md'
+            - 'concepts/commands/Optionals.md'
+        - 'concepts/Listeners.md'
+        - 'concepts/Services.md'
+        - 'concepts/Preconditions.md'
+        - 'concepts/Data.md'
+    - DSL:
+        - 'dsl/Menu.md'
+    - Extending:
+        - 'extending/Arguments.md'
+    - 'API Docs': '/dokka/-discord-kt/index.html'
