@@ -25,6 +25,7 @@ nav:
         - 'concepts/Data.md'
     - DSL:
         - 'dsl/Menu.md'
+        - 'dsl/Conversations.md'
     - Extending:
         - 'extending/Arguments.md'
     - 'API Docs': '/dokka/-discord-kt/index.html'
