@@ -1,0 +1,31 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/AnyArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/AnyArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/AttachmentArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/AttachmentArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/BooleanArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/BooleanArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/CategoryArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/CategoryArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/ChannelArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/ChannelArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/CharArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/CharArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/CommandArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/CommandArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/DoubleArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/DoubleArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/EveryArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/EveryArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/GuildArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/GuildArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/GuildEmojiArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/GuildEmojiArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/HexColorArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/HexColorArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/IntegerArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/IntegerArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/LongArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/LongArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/MemberArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/MemberArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/MessageArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/MessageArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/QuoteArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/QuoteArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/RoleArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/RoleArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/SplitterArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/SplitterArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/TimeArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/TimeArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/UnicodeEmojiArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/UnicodeEmojiArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/UrlArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/UrlArg.Companion.html
+$dokka.location:me.jakejmattson.discordkt.api.arguments/UserArg.Companion///PointingToDeclaration/me/jakejmattson/discordkt/api/arguments/UserArg.Companion.html
+me.jakejmattson.discordkt.api
+me.jakejmattson.discordkt.api.annotations
+me.jakejmattson.discordkt.api.arguments
+me.jakejmattson.discordkt.api.dsl
+me.jakejmattson.discordkt.api.extensions
+
