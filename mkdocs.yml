@@ -28,7 +28,7 @@ nav:
         - 'dsl/Conversations.md'
     - Extending:
         - 'extending/Arguments.md'
-    - 'API Docs': '/dokka/-discord-kt/index.html'
+    - 'API Docs': '/dokka/index.html'
 
 extra:
     social:
