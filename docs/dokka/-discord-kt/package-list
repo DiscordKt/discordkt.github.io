@@ -244,6 +244,7 @@ $dokka.location:me.jakejmattson.discordkt.api.dsl/Bot///PointingToDeclaration/-
 $dokka.location:me.jakejmattson.discordkt.api.dsl/Bot/Bot/#kotlin.String#kotlin.String/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.dsl/-bot/-bot.html
 $dokka.location:me.jakejmattson.discordkt.api.dsl/Bot/configure/#kotlin.coroutines.SuspendFunction1[me.jakejmattson.discordkt.api.dsl.SimpleConfiguration,kotlin.Unit]/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.dsl/-bot/configure.html
 $dokka.location:me.jakejmattson.discordkt.api.dsl/Bot/inject/#kotlin.Array[kotlin.Any]/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.dsl/-bot/inject.html
+$dokka.location:me.jakejmattson.discordkt.api.dsl/Bot/localeOf/#me.jakejmattson.discordkt.api.locale.Language#kotlin.Function1[me.jakejmattson.discordkt.api.locale.Locale,kotlin.Unit]/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.dsl/-bot/locale-of.html
 $dokka.location:me.jakejmattson.discordkt.api.dsl/Bot/mentionEmbed/#kotlin.coroutines.SuspendFunction2[dev.kord.rest.builder.message.EmbedBuilder,me.jakejmattson.discordkt.api.dsl.DiscordContext,kotlin.Unit]/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.dsl/-bot/mention-embed.html
 $dokka.location:me.jakejmattson.discordkt.api.dsl/Bot/onStart/#kotlin.coroutines.SuspendFunction1[me.jakejmattson.discordkt.api.Discord,kotlin.Unit]/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.dsl/-bot/on-start.html
 $dokka.location:me.jakejmattson.discordkt.api.dsl/Bot/permissions/#kotlin.coroutines.SuspendFunction1[me.jakejmattson.discordkt.api.dsl.PermissionContext,kotlin.Boolean]/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.dsl/-bot/permissions.html
@@ -453,6 +454,36 @@ $dokka.location:me.jakejmattson.discordkt.api.extensions//toSnowflake/kotlin.Str
 $dokka.location:me.jakejmattson.discordkt.api.extensions//toSnowflakeOrNull/kotlin.String#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.extensions/to-snowflake-or-null.html
 $dokka.location:me.jakejmattson.discordkt.api.extensions//toTimeString/kotlin.Long#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.extensions/to-time-string.html
 $dokka.location:me.jakejmattson.discordkt.api.extensions//trimToID/kotlin.String#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.extensions/trim-to-i-d.html
+$dokka.location:me.jakejmattson.discordkt.api.locale////PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/index.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Language.EN///PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-language/-e-n/index.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Language.EN/locale/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-language/-e-n/locale.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Language.EN/name/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-language/-e-n/name.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Language.EN/ordinal/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-language/-e-n/ordinal.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Language///PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-language/index.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Language/locale/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-language/locale.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Locale///PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale/index.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Locale/badArgs/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale/bad-args.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Locale/commandRecommendation/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale/command-recommendation.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Locale/helpCategory/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale/help-category.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Locale/helpDescription/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale/help-description.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Locale/helpEmbedDescription/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale/help-embed-description.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Locale/helpName/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale/help-name.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Locale/invalidBooleanArg/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale/invalid-boolean-arg.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Locale/invalidFormat/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale/invalid-format.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Locale/notFound/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale/not-found.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/Locale/unknownCommand/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale/unknown-command.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN///PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/index.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN/LocaleEN/#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/-locale-e-n.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN/badArgs/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/bad-args.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN/commandRecommendation/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/command-recommendation.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN/helpCategory/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/help-category.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN/helpDescription/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/help-description.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN/helpEmbedDescription/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/help-embed-description.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN/helpName/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/help-name.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN/invalidBooleanArg/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/invalid-boolean-arg.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN/invalidFormat/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/invalid-format.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN/notFound/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/not-found.html
+$dokka.location:me.jakejmattson.discordkt.api.locale/LocaleEN/unknownCommand/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api.locale/-locale-e-n/unknown-command.html
 $dokka.location:me.jakejmattson.discordkt.api////PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api/index.html
 $dokka.location:me.jakejmattson.discordkt.api/Discord///PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api/-discord/index.html
 $dokka.location:me.jakejmattson.discordkt.api/Discord/Discord/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api/-discord/-discord.html
@@ -465,6 +496,7 @@ $dokka.location:me.jakejmattson.discordkt.api/Discord/getInjectionObjects/#kotli
 $dokka.location:me.jakejmattson.discordkt.api/Discord/getInjectionObjects/#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api/-discord/get-injection-objects.html
 $dokka.location:me.jakejmattson.discordkt.api/Discord/getInjectionObjects/#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api/-discord/get-injection-objects.html
 $dokka.location:me.jakejmattson.discordkt.api/Discord/kord/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api/-discord/kord.html
+$dokka.location:me.jakejmattson.discordkt.api/Discord/locale/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api/-discord/locale.html
 $dokka.location:me.jakejmattson.discordkt.api/Discord/versions/#/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api/-discord/versions.html
 $dokka.location:me.jakejmattson.discordkt.api/Versions///PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api/-versions/index.html
 $dokka.location:me.jakejmattson.discordkt.api/Versions/Versions/#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/-discord-kt/me.jakejmattson.discordkt.api/-versions/-versions.html
@@ -476,4 +508,5 @@ me.jakejmattson.discordkt.api.annotations
 me.jakejmattson.discordkt.api.arguments
 me.jakejmattson.discordkt.api.dsl
 me.jakejmattson.discordkt.api.extensions
+me.jakejmattson.discordkt.api.locale
 
