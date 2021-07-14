@@ -4,7 +4,7 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.superfences
 
-theme: 
+theme:
     name: material
     logo: images/discordkt-logo.png
     palette:
@@ -15,10 +15,11 @@ theme:
 nav:
     - index.md
     - Concepts:
-        - Commands: 
+        - Commands:
             - 'concepts/commands/Basics.md'
             - 'concepts/commands/Input.md'
             - 'concepts/commands/Optionals.md'
+        - 'concepts/Permissions.md'
         - 'concepts/Listeners.md'
         - 'concepts/Services.md'
         - 'concepts/Preconditions.md'
