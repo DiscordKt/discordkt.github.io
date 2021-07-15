@@ -5,8 +5,8 @@ Here is an example conversation:
 
 ```kotlin
 fun demoConversation() = conversation(exitString = "exit") {
-    val name = promptMessage(AnyArg, "Please enter your name.")
-    val age = promptMessage(IntegerArg, "Please enter your age.")
+    val name = promptMessage(AnyArg, "What is your name?")
+    val age = promptMessage(IntegerArg, "How old are you?")
 
     respond("Nice to meet you $name! $age is a great age.")
 }
@@ -18,36 +18,40 @@ This DSL uses coroutines to prompt for values in "real time" as the conversation
 
 To get input from a user, there are several functions you can use. Most of these blocks accept an `ArgumentType`, just like a command. This is the type of data you're trying to produce. If the user's answer is not parsed successfully, the prompt will be sent again.
 
-### A simple string prompt
+### Text prompt
 ```kotlin
-val age = promptMessage(IntegerArg, "Please enter your age.")
+val age = promptMessage(IntegerArg, "What is your age?")
 ```
 
-### A validating prompt
+### Validating prompt
 ```kotlin
 val age = promptUntil(
     argumentType = IntegerArg,
-    prompt = "Please enter your age.",
+    prompt = "What is your age?",
     error = "Age must be positive!",
     isValid = { it > 0 }
 )
 ```
 
-### An embed as a prompt
+### Embed prompt
 ```kotlin
 val age = promptEmbed(IntegerArg) {
     title = "What is your age?"
 }
 ```
 
-### An embed with reactions
+### Button prompt
 ```kotlin
-val response = promptReaction(
-    PromptedReaction(Emojis.whiteCheckMark, "Yes it's great!", "Glad you like the lib."),
-    PromptedReaction(Emojis.x, "Not a fan.", "You should let me know how to fix the lib.")
-) {
-    title = "Do you like DiscordKt?"
-    color = Color(0x00bfff)
+val response = promptButton<String> {
+    embed {
+        title = "Do you like DiscordKt?"
+        color = Color(0x00bfff)
+    }
+
+    buttons {
+        button("Yes", Emojis.whiteCheckMark, "Glad you like it")
+        button("No", Emojis.x, "You should let me know how to fix the lib.")
+    }
 }
 ```
 
