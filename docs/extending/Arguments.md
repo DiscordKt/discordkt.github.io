@@ -1,8 +1,10 @@
-To make a custom argument, we extend `ArgumentType`, and implement its abstract methods. The provided `IntegerArg` will be used for this example.
+To make a custom argument, we implement the `ArgumentType` interface. The provided `IntegerArg` will be used for this example.
 
 ```kotlin
 open class IntegerArg(override val name: String = "Integer") : ArgumentType<Int> {
     companion object : IntegerArg()
+
+    override val description = "A whole number"
 
     override suspend fun convert(arg: String, args: List<String>, event: CommandEvent<*>): ArgumentResult<Int> {
         val result = arg.toIntOrNull() ?: return Error("Invalid format")
@@ -23,7 +25,7 @@ The first parameter in every ArgumentType is the name. This is what the arg will
 The companion object for an ArgumentType is just syntactic sugar when using the argument. This companion object allows you to use an ArgumentType by name instead of having to invoke the constructor. `execute(IntegerArg)` instead of `execute(IntegerArg())`.
 
 ### Examples
-Examples are used primarily for help menus. When help is invoked on a command, an example from each ArgumentType is selected at random. The `generateExamples` function helps you generate relevant examples on the fly by exposing the CommandEvent.
+Examples are used primarily for help menus. When help is invoked on a command, an example from each ArgumentType is selected at random. The `generateExamples` function helps you generate relevant examples on the fly using the CommandEvent.
 
 ### ArgumentResult
 Each ArgumentType must return an `ArgumentResult` that matches the type expected by the argument. So in this case, we use `ArgumentResult<Int>` as our return type. The actual return can either be `Success` or `Error`:

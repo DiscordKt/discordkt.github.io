@@ -1,4 +1,4 @@
-Preconditions are a way to validate state before running a command. This can be used for things like permissions.
+Preconditions are a way to validate state before running a command.
 
 ```kotlin
 fun botPrecondition() = precondition {

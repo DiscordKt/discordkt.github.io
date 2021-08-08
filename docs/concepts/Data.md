@@ -1,4 +1,4 @@
-Data is for storing and loading JSON files. This is particularly useful for configuration files and persistent storage. These are automatically injected.
+It is often necessary to write data to persistent storage. This is commonly used for configuration files that are read on startup.
 
 ```kotlin
 class BotConfiguration(val prefix: String = "!") : Data("config/config.json", killIfGenerated = false)

@@ -1,4 +1,4 @@
-Services contain and share your business logic between each of. For example, we can create a `MathService` to apply common calculations.
+Services contain and share your business logic. For example, we can create a `MathService` to apply common calculations.
 
 ```kotlin
 @Service
