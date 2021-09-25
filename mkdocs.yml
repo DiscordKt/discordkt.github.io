@@ -16,9 +16,10 @@ theme:
       - navigation.expand
       - navigation.tabs
 
-pages:
+nav:
+  - index.md
   - Release 0.22.0:
-      - Getting Started: 'release/index.md'
+      - Installation: 'release/index.md'
       - Concepts:
           - Commands:
               - 'release/concepts/commands/Basics.md'
@@ -36,7 +37,7 @@ pages:
           - 'release/extending/Arguments.md'
       - 'API Docs': 'release/dokka/index.html'
   - Snapshot 0.23.0:
-      - Getting Started: 'snapshot/index.md'
+      - Installation: 'snapshot/index.md'
       - Concepts:
           - Commands:
               - 'snapshot/concepts/commands/Basics.md'
