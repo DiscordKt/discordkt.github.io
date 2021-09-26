@@ -1,10 +1,7 @@
 DiscordKt is a Kotlin Discord library, built on top of [Kord](https://github.com/kordlib/kord) - a Kotlin Discord API. For full documentation, you must choose a branch.
 
-#### [Release](release/index.md)
-A stable, unchanging version.
-
-#### [Snapshot](snapshot/index.md)
-A live snapshot with the most recent features.
+[Release](release/index.md){: .md-button }
+[Snapshot](snapshot/index.md){: .md-button }
 
 ## Syntax Samples
 

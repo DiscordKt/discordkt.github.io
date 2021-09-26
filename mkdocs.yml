@@ -1,6 +1,7 @@
 site_name: DiscordKt
 
 markdown_extensions:
+  - attr_list
   - pymdownx.tabbed
   - pymdownx.superfences
 
