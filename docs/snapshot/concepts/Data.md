@@ -1,9 +1,22 @@
 It is often necessary to write data to persistent storage. This is commonly used for configuration files that are read on startup.
 
+The class needs to be marked with `@Serializable` to allow it to be serialized properly.
+
 ```kotlin
-class BotConfiguration(val prefix: String = "!") : Data("config/config.json", killIfGenerated = false)
+@Serializable
+data class MyConfig(val value: String) : Data()
 ```
 
-Any class that extends from `Data` will be created and written to a file at the `path` location if it does not already exist. If the file already exists, it will be deserialized into an instance and injected.
+To read the data back simply call the data function inside the bot DSL block, a fallback must be defined for how to construct
+the data if the file isn't located.
 
-If the target file does not exist, it will be generated with the default values provided. If `killIfGenerated` is true, the program will generate the file, then exit.
+```kotlin
+// main
+bot(token) {
+    val config = data("./config.json") {
+        MyConfig("example")    
+    }
+}
+```
+
+If the path does not exist it will be created, if the file does not exist the default value will be saved to a new file.
