@@ -7,7 +7,7 @@ const savedDarkMode = storage ? JSON.parse(storage) : false
 if(savedDarkMode === true){
     document.getElementsByTagName("html")[0].classList.add("theme-dark")
 }</script>
-<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
   <body>
     <div class="navigation-wrapper" id="navigation-wrapper">
       <div id="leftToggler"><span class="icon-toggler"></span></div>
@@ -21,41 +21,28 @@ if(savedDarkMode === true){
       <div id="leftColumn">
         <div id="sideMenu"></div>
       </div>
-      <div id="main"><script type="text/javascript" src="../../../scripts/main.js"></script>
+      <div id="main">
         <div class="main-content" id="content" pageIds="DiscordKt::me.jakejmattson.discordkt.dsl/SimpleConfiguration///PointingToDeclaration//769193423">
           <div class="breadcrumbs"><a href="../../../index.html">DiscordKt</a>/<a href="../index.html">me.jakejmattson.discordkt.dsl</a>/<a href="index.html">SimpleConfiguration</a></div>
           <div class="cover ">
             <h1 class="cover"><span>Simple</span><wbr></wbr><span><span>Configuration</span></span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">SimpleConfiguration</a><span class="token punctuation">(</span>allowMentionPrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>showStartupLog<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>generateCommandDocs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>recommendCommands<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>enableSearch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>commandReaction<span class="token operator">: </span><span data-unresolved-link="dev.kord.x.emoji/DiscordEmoji///PointingToDeclaration/">DiscordEmoji</span><span class="token operator">?</span><span class="token punctuation">, </span>theme<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html">Color</a><span class="token operator">?</span><span class="token punctuation">, </span>intents<span class="token operator">: </span><span data-unresolved-link="dev.kord.gateway/Intents///PointingToDeclaration/">Intents</span><span class="token punctuation">, </span>entitySupplyStrategy<span class="token operator">: </span><span data-unresolved-link="dev.kord.core.supplier/EntitySupplyStrategy///PointingToDeclaration/">EntitySupplyStrategy</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Holds all basic configuration options.</p></div></div>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">SimpleConfiguration</a><span class="token punctuation">(</span>allowMentionPrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>showStartupLog<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>generateCommandDocs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>recommendCommands<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>enableSearch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>commandReaction<span class="token operator">: </span><span data-unresolved-link="dev.kord.x.emoji/DiscordEmoji///PointingToDeclaration/">DiscordEmoji</span><span class="token operator">?</span><span class="token punctuation">, </span>theme<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html">Color</a><span class="token operator">?</span><span class="token punctuation">, </span>intents<span class="token operator">: </span><span data-unresolved-link="dev.kord.gateway/Intents///PointingToDeclaration/">Intents</span><span class="token punctuation">, </span>permissions<span class="token operator">: </span><a href="../-permission-set/index.html">PermissionSet</a><span class="token punctuation">, </span>entitySupplyStrategy<span class="token operator">: </span><span data-unresolved-link="dev.kord.core.supplier/EntitySupplyStrategy///PointingToDeclaration/">EntitySupplyStrategy</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Holds all basic configuration options.</p></div></div>
           </div>
           <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
             <div class="tabs-section-body">
               <h2 class="tabbedcontent">Constructors</h2>
-              <div class="table" data-togglable="Constructors"><a data-name="-110669390%2FConstructors%2F769193423" anchor-label="SimpleConfiguration" id="-110669390%2FConstructors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+              <div class="table" data-togglable="Constructors"><a data-name="-1661817435%2FConstructors%2F769193423" anchor-label="SimpleConfiguration" id="-1661817435%2FConstructors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
                   <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-simple-configuration.html">SimpleConfiguration</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-110669390%2FConstructors%2F769193423"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="-simple-configuration.html"><span>Simple</span><wbr></wbr><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1661817435%2FConstructors%2F769193423"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
                       <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-simple-configuration.html"><span class="token function">SimpleConfiguration</span></a><span class="token punctuation">(</span>allowMentionPrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span>showStartupLog<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span>generateCommandDocs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span>recommendCommands<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span>enableSearch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span>commandReaction<span class="token operator">: </span><span data-unresolved-link="dev.kord.x.emoji/DiscordEmoji///PointingToDeclaration/">DiscordEmoji</span><span class="token operator">?</span><span class="token operator"> = </span>Emojis.eyes<span class="token punctuation">, </span>theme<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html">Color</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span>intents<span class="token operator">: </span><span data-unresolved-link="dev.kord.gateway/Intents///PointingToDeclaration/">Intents</span><span class="token operator"> = </span>Intents.none<span class="token punctuation">, </span>entitySupplyStrategy<span class="token operator">: </span><span data-unresolved-link="dev.kord.core.supplier/EntitySupplyStrategy///PointingToDeclaration/">EntitySupplyStrategy</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator"> = </span>EntitySupplyStrategy.cacheWithCachingRestFallback<span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="254765680%2FFunctions%2F769193423" anchor-label="permissions" id="254765680%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-                <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="permissions.html"><span><span>permissions</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="254765680%2FFunctions%2F769193423"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="permissions.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="permissions.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="permissions.html"><span class="token function">permissions</span></a><span class="token punctuation">(</span>commandDefault<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="permissions.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Configure permissions for this bot with an enum that inherits from <a href="../-permission-set/index.html">PermissionSet</a>.</p></div></div></div>
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-simple-configuration.html"><span class="token function">SimpleConfiguration</span></a><span class="token punctuation">(</span>allowMentionPrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span>showStartupLog<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span>generateCommandDocs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span>recommendCommands<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span>enableSearch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span>commandReaction<span class="token operator">: </span><span data-unresolved-link="dev.kord.x.emoji/DiscordEmoji///PointingToDeclaration/">DiscordEmoji</span><span class="token operator">?</span><span class="token operator"> = </span>Emojis.eyes<span class="token punctuation">, </span>theme<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html">Color</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span>intents<span class="token operator">: </span><span data-unresolved-link="dev.kord.gateway/Intents///PointingToDeclaration/">Intents</span><span class="token operator"> = </span>Intents.none<span class="token punctuation">, </span>permissions<span class="token operator">: </span><a href="../-permission-set/index.html">PermissionSet</a><span class="token operator"> = </span>DefaultPermissions<span class="token punctuation">, </span>entitySupplyStrategy<span class="token operator">: </span><span data-unresolved-link="dev.kord.core.supplier/EntitySupplyStrategy///PointingToDeclaration/">EntitySupplyStrategy</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator"> = </span>EntitySupplyStrategy.cacheWithCachingRestFallback<span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
                       </div>
                     </div>
                   </div>
@@ -65,7 +52,9 @@ if(savedDarkMode === true){
               <div class="table" data-togglable="Properties"><a data-name="-805362335%2FProperties%2F769193423" anchor-label="allowMentionPrefix" id="-805362335%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="allow-mention-prefix.html">allowMentionPrefix</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-805362335%2FProperties%2F769193423"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="allow-mention-prefix.html">allowMentionPrefix</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-805362335%2FProperties%2F769193423"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
@@ -78,7 +67,9 @@ if(savedDarkMode === true){
 <a data-name="-445312910%2FProperties%2F769193423" anchor-label="commandReaction" id="-445312910%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="command-reaction.html">commandReaction</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-445312910%2FProperties%2F769193423"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="command-reaction.html">commandReaction</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-445312910%2FProperties%2F769193423"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
@@ -91,7 +82,9 @@ if(savedDarkMode === true){
 <a data-name="1927637225%2FProperties%2F769193423" anchor-label="enableSearch" id="1927637225%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="enable-search.html">enableSearch</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1927637225%2FProperties%2F769193423"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="enable-search.html">enableSearch</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1927637225%2FProperties%2F769193423"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
@@ -104,7 +97,9 @@ if(savedDarkMode === true){
 <a data-name="1680697327%2FProperties%2F769193423" anchor-label="entitySupplyStrategy" id="1680697327%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="entity-supply-strategy.html">entitySupplyStrategy</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1680697327%2FProperties%2F769193423"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="entity-supply-strategy.html">entitySupplyStrategy</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1680697327%2FProperties%2F769193423"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
@@ -117,7 +112,9 @@ if(savedDarkMode === true){
 <a data-name="-899446347%2FProperties%2F769193423" anchor-label="generateCommandDocs" id="-899446347%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="generate-command-docs.html">generateCommandDocs</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-899446347%2FProperties%2F769193423"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="generate-command-docs.html">generateCommandDocs</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-899446347%2FProperties%2F769193423"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
@@ -130,7 +127,9 @@ if(savedDarkMode === true){
 <a data-name="-747798513%2FProperties%2F769193423" anchor-label="intents" id="-747798513%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="intents.html">intents</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-747798513%2FProperties%2F769193423"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="intents.html">intents</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-747798513%2FProperties%2F769193423"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
@@ -140,10 +139,27 @@ if(savedDarkMode === true){
                     </div>
                   </div>
                 </div>
+<a data-name="977246466%2FProperties%2F769193423" anchor-label="permissions" id="977246466%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="permissions.html">permissions</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="977246466%2FProperties%2F769193423"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="977246466%2FProperties%2F769193423" anchor-label="permissions" id="977246466%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="permissions.html">permissions</a><span class="token operator">: </span><a href="../-permission-set/index.html">PermissionSet</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 <a data-name="-1952961694%2FProperties%2F769193423" anchor-label="recommendCommands" id="-1952961694%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="recommend-commands.html">recommendCommands</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1952961694%2FProperties%2F769193423"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="recommend-commands.html">recommendCommands</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1952961694%2FProperties%2F769193423"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
@@ -156,7 +172,9 @@ if(savedDarkMode === true){
 <a data-name="-116751376%2FProperties%2F769193423" anchor-label="showStartupLog" id="-116751376%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="show-startup-log.html">showStartupLog</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-116751376%2FProperties%2F769193423"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="show-startup-log.html">showStartupLog</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-116751376%2FProperties%2F769193423"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
@@ -169,7 +187,9 @@ if(savedDarkMode === true){
 <a data-name="-1139308003%2FProperties%2F769193423" anchor-label="theme" id="-1139308003%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
                 <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
                   <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="theme.html">theme</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1139308003%2FProperties%2F769193423"></span>
+                    <div class=""><span class="inline-flex">
+                        <div><a href="theme.html">theme</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1139308003%2FProperties%2F769193423"></span>
                           <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                         </span></span></div>
                     <div>
@@ -183,7 +203,7 @@ if(savedDarkMode === true){
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
   </body>
