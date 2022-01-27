@@ -47,6 +47,7 @@ nav:
                 - 'snapshot/concepts/commands/text/Optionals.md'
               - Slash:
                 - 'snapshot/concepts/commands/slash/Basics.md'
+                - 'snapshot/concepts/commands/slash/Contextual.md'
           - 'snapshot/concepts/Permissions.md'
           - 'snapshot/concepts/Listeners.md'
           - 'snapshot/concepts/Services.md'
