@@ -41,9 +41,12 @@ nav:
       - Installation: 'snapshot/index.md'
       - Concepts:
           - Commands:
-              - 'snapshot/concepts/commands/Basics.md'
-              - 'snapshot/concepts/commands/Input.md'
-              - 'snapshot/concepts/commands/Optionals.md'
+              - Text:
+                - 'snapshot/concepts/commands/text/Basics.md'
+                - 'snapshot/concepts/commands/text/Input.md'
+                - 'snapshot/concepts/commands/text/Optionals.md'
+              - Slash:
+                - 'snapshot/concepts/commands/slash/Basics.md'
           - 'snapshot/concepts/Permissions.md'
           - 'snapshot/concepts/Listeners.md'
           - 'snapshot/concepts/Services.md'
