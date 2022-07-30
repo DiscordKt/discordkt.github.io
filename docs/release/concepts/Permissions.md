@@ -1,47 +1,46 @@
-To check if a user has permission to execute a command, you can create a permission hierarchy with an enum.
-Your highest permission level should be at the top, and the lowest at the bottom.
-This enum must implement `PermissionSet`.
+When making more complicated bots, you may want or need to restrict commands to only be run by certain users or roles.
+Discord provides a built-in way for server owners to change the slash command permissions of your bot, but you do need
+to set a default permission level.
 
-```kotlin
-enum class Permissions : PermissionSet {
-    BOT_OWNER {
-        override suspend fun hasPermission(context: PermissionContext) = context.user.id.value == 298168112824582154
-    },
-    GUILD_OWNER {
-        override suspend fun hasPermission(context: PermissionContext) = context.getMember()?.isOwner() ?: false
-    },
-    EVERYONE {
-        override suspend fun hasPermission(context: PermissionContext) = true
-    }
-}
-```
+Permissions are defined by vanilla Discord permissions. For example, to make a command only available if the user has
+the "Manage Messages" permission, you'd define the permission object as `Permissions(Permission.ManageMessages)`. You
+can also combine permissions by specifying more than one in the constructor, for example
+`Permissions(Permission.ManageMessages, Permission.ManageNicknames)`. In this case, **both** the "Manage Messsages" and
+the "Manage Nicknames" permissions are needed.
 
-Once created, we must integrate it.
-Firstly, it must be registered in the main bot function via the `configure` block.
+## Global permission level
+
+If you want, you can set a default permission level for all registered commands. This is done in the bot's `configure`
+block.
 
 ```kotlin
 configure {
-    permissions(commandDefault = Permissions.EVERYONE)
+    defaultPermissions = Permissions(Permission.UseApplicationCommands)
 }
 ```
 
-This registers the permission enum we created and sets the permission level of every command to `EVERYONE`.
-To override this value, simply specify it in the target command.
+## Category permission level
+
+You can also specify a permission level for a category. To do this, you need to pass the desired permissions in the
+`commands` builder.
 
 ```kotlin
-command("BotOwner") {
-    description = "Command requiring BOT_OWNER permissions"
-    requiredPermission = Permissions.BOT_OWNER
-    execute {
-        respond("Hello bot owner!")
+fun adminCommands() = commands("Administration", requiredPermissionLevel = Permissions(Permission.Administrator)) {
+    // ...
+}
+```
+
+## Command permission level
+
+Lastly, you can also set the permission level directly in the command.
+
+```kotlin
+slash("ban") {
+    requiredPermissions = Permissions(Permission.BanMembers)
+    execute(UserArg) {
+        args.first.asMemberOrNull(guild.id)?.ban()
     }
 }
 ```
 
-To set the required permission by category, pass the desired permission level into the `commands` builder.
-
-```kotlin
-fun botOwnerCommands() = commands("BotOwner", Permissions.BOT_OWNER) { ... }
-```
-
-This sets each command in this category to `BOT_OWNER`, which can then be overridden on a per-command basis as shown above.
+The narrowest permission level will be the permission level for a command (global > category > command).
