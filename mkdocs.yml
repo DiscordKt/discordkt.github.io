@@ -1,68 +1,43 @@
 site_name: DiscordKt
-
 markdown_extensions:
   - attr_list
-  - pymdownx.tabbed
   - pymdownx.superfences
-
+  - pymdownx.tabbed:
+      alternate_style: true 
 theme:
-    name: material
-    logo: images/discordkt-logo.png
-    palette:
-        scheme: slate
-        primary: cyan
-        accent: cyan
-    features:
-      - navigation.instant
-      - navigation.expand
-      - navigation.tabs
-
+  name: material
+  logo: images/discordkt-logo.png
+  palette:
+    scheme: slate
+    primary: cyan
+    accent: cyan
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
 nav:
-  - index.md
-  - Release 0.22.0:
-      - Installation: 'release/index.md'
-      - Concepts:
-          - Commands:
-              - 'release/concepts/commands/Basics.md'
-              - 'release/concepts/commands/Input.md'
-              - 'release/concepts/commands/Optionals.md'
-          - 'release/concepts/Permissions.md'
-          - 'release/concepts/Listeners.md'
-          - 'release/concepts/Services.md'
-          - 'release/concepts/Preconditions.md'
-          - 'release/concepts/Data.md'
-      - DSL:
-          - 'release/dsl/Menu.md'
-          - 'release/dsl/Conversations.md'
-      - Extending:
-          - 'release/extending/Arguments.md'
-      - 'API Docs': 'release/dokka/index.html'
-  - Snapshot 0.23.0:
-      - Installation: 'snapshot/index.md'
-      - Concepts:
-          - Commands:
-              - Text:
-                - 'snapshot/concepts/commands/text/Basics.md'
-                - 'snapshot/concepts/commands/text/Input.md'
-                - 'snapshot/concepts/commands/text/Optionals.md'
-              - Slash:
-                - 'snapshot/concepts/commands/slash/Basics.md'
-                - 'snapshot/concepts/commands/slash/Contextual.md'
-          - 'snapshot/concepts/Permissions.md'
-          - 'snapshot/concepts/Listeners.md'
-          - 'snapshot/concepts/Services.md'
-          - 'snapshot/concepts/Preconditions.md'
-          - 'snapshot/concepts/Data.md'
-      - DSL:
-          - 'snapshot/dsl/Menu.md'
-          - 'snapshot/dsl/Conversations.md'
-      - Extending:
-          - 'snapshot/extending/Arguments.md'
-      - 'API Docs': 'snapshot/dokka/index.html'
-
+  - Home:
+      - index.md
+      - install.md
+  - Concepts:
+      - Commands:
+          - concepts/commands/Basics.md
+          - concepts/commands/Input.md
+          - concepts/commands/Optionals.md
+      - concepts/Permissions.md
+      - concepts/Listeners.md
+      - concepts/Services.md
+      - concepts/Preconditions.md
+      - concepts/Data.md
+  - DSL:
+      - dsl/Menu.md
+      - dsl/Conversations.md
+  - Extending:
+      - extending/Arguments.md
+  - API Docs: api/index.html
 extra:
-    social:
-        - icon: fontawesome/brands/github
-          link: https://github.com/DiscordKt/DiscordKt
-        - icon: fontawesome/brands/discord
-          link: https://discord.gg/REZVVjA
+  social:
+    - icon: fontawesome/brands/github
+      link: 'https://github.com/DiscordKt/DiscordKt'
+    - icon: fontawesome/brands/discord
+      link: 'https://discord.gg/REZVVjA'
