@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>EN</title>
+    <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script src="https://unpkg.com/kotlin-playground@1"></script><script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../../index.html">
+                    <span>DiscordKt</span>
+            </a>
+    </div>
+    <div>
+0.23.4    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="DiscordKt::me.jakejmattson.discordkt.locale/Language.EN///PointingToDeclaration/{&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;:{&quot;key&quot;:&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;}}/769193423">
+  <div class="breadcrumbs"><a href="../../../../index.html">DiscordKt</a><span class="delimiter">/</span><a href="../../index.html">me.jakejmattson.discordkt.locale</a><span class="delimiter">/</span><a href="../index.html">Language</a><span class="delimiter">/</span><a href="index.html">EN</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>EN</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="index.html">EN</a></div><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">English</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Samples">Samples</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Samples</h2>
+      <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Samples"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">
+fun main() { 
+   //sampleStart 
+   /**
+ * English locale pack
+ */
+public data class LocaleEN(
+    public override var helpName: String = &quot;Help&quot;,
+    public override var helpCategory: String = &quot;Utility&quot;,
+    public override var helpDescription: String = &quot;Display a help menu.&quot;,
+    public override var helpEmbedDescription: String = &quot;Use `${helpName} &lt;command&gt;` for more information.&quot;,
+
+    public override var unknownCommand: String = &quot;Unknown Command&quot;,
+    public override var notFound: String = &quot;Not found&quot;,
+    public override var invalidFormat: String = &quot;Invalid format&quot;,
+
+    public override var commandRecommendation: String = &quot;Recommendation: {0}&quot;,
+    public override var badArgs: String = &quot;Cannot execute `{0}` with these args.&quot;,
+    public override var invalidBooleanArg: String = &quot;Must be '{0}' or '{1}'&quot;,
+
+    public override var anyArgDescription: String = &quot;A single word or value&quot;,
+    public override var attachmentArgDescription: String = &quot;A Discord attachment&quot;,
+    public override var booleanArgDescription: String = &quot;Either {0} or {1}&quot;,
+    public override var channelArgDescription: String = &quot;A Discord channel&quot;,
+    public override var charArgDescription: String = &quot;A single letter&quot;,
+    public override var choiceArgDescription: String = &quot;A list to choose from&quot;,
+    public override var commandArgDescription: String = &quot;A DiscordKt command&quot;,
+    public override var doubleArgDescription: String = &quot;A decimal number&quot;,
+    public override var everyArgDescription: String = &quot;All remaining input&quot;,
+    public override var guildArgDescription: String = &quot;A Discord guild&quot;,
+    public override var guildEmojiArgDescription: String = &quot;A Discord emoji&quot;,
+    public override var hexColorArgDescription: String = &quot;A hexadecimal color&quot;,
+    public override var integerArgDescription: String = &quot;A whole number&quot;,
+    public override var integerRangeArgDescription: String = &quot;A whole number between {0} and {1}&quot;,
+    public override var memberArgDescription: String = &quot;A Discord member&quot;,
+    public override var messageArgDescription: String = &quot;A Discord message&quot;,
+    public override var multipleArgDescription: String = &quot;Any number of {0}&quot;,
+    public override var optionalArgDescription: String = &quot;[optional] {0}&quot;,
+    public override var quoteArgDescription: String = &quot;Text between quotations&quot;,
+    public override var roleArgDescription: String = &quot;A Discord role&quot;,
+    public override var splitterArgDescription: String = &quot;Items split by {0}&quot;,
+    public override var timeArgDescription: String = &quot;An amount of time&quot;,
+    public override var unicodeEmojiArgDescription: String = &quot;A simple emoji&quot;,
+    public override var urlArgDescription: String = &quot;A URL&quot;,
+    public override var userArgDescription: String = &quot;A Discord user&quot;
+) : Locale 
+   //sampleEnd
+}</code></pre></div></div></div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1184531029%2FProperties%2F769193423" anchor-label="locale" id="1184531029%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../locale.html"><span><span>locale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1184531029%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="1184531029%2FProperties%2F769193423" anchor-label="locale" id="1184531029%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../locale.html">locale</a><span class="token operator">: </span><a href="../../-locale/index.html">Locale</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1184531029%2FProperties%2F769193423" anchor-label="locale" id="1184531029%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><p class="paragraph">The matching locale for this language.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-372974862%2FProperties%2F769193423" anchor-label="name" id="-372974862%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-t-k/index.html#-372974862%2FProperties%2F769193423"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-372974862%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="-372974862%2FProperties%2F769193423" anchor-label="name" id="-372974862%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-t-k/index.html#-372974862%2FProperties%2F769193423">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-739389684%2FProperties%2F769193423" anchor-label="ordinal" id="-739389684%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-t-k/index.html#-739389684%2FProperties%2F769193423"><span><span>ordinal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739389684%2FProperties%2F769193423"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><a data-name="-739389684%2FProperties%2F769193423" anchor-label="ordinal" id="-739389684%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-t-k/index.html#-739389684%2FProperties%2F769193423">ordinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
