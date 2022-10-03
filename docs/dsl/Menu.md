@@ -2,13 +2,8 @@ Menus represent an embed message with multiple pages.
 
 ```kotlin
 respondMenu {
-    page {
-        title = "Page 1"
-    }
-
-    page {
-        title = "Page 2"
-    }
+    page { title = "Page 1" }
+    page { title = "Page 2" }
 
     buttons {
         button("Left", Emojis.arrowLeft) {

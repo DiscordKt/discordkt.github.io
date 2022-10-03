@@ -1,8 +1,7 @@
-Each `ArgumentType` provided to a command can be made optional with either `optional` or `optionalNullable` functions.
+Each `Argument` provided to a command can be made optional with either `optional` or `optionalNullable` functions.
 
 ```kotlin
-command("DisplayText") {
-    description = "Display some text."
+slash("DisplayText", "Display some text.") {
     execute(AnyArg.optional("Hello")) {
         val text = args.first
         respond("Your text is: $text")

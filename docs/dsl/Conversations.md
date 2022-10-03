@@ -16,7 +16,7 @@ This DSL uses coroutines to prompt for values in "real time" as the conversation
 
 ## Input
 
-To get input from a user, there are several functions you can use. Most of these blocks accept an `ArgumentType`, just like a command. This is the type of data you're trying to produce. If the user's answer is not parsed successfully, the prompt will be sent again.
+To get input from a user, there are several functions you can use. Most of these blocks accept an `Argument`, just like a command. This is the type of data you're trying to produce. If the user's answer is not parsed successfully, the prompt will be sent again.
 
 ### Text prompt
 ```kotlin
@@ -52,6 +52,22 @@ val response = promptButton<String> {
         button("Yes", Emojis.whiteCheckMark, "Glad you like it")
         button("No", Emojis.x, "You should let me know how to fix the lib.")
     }
+}
+```
+
+### Select prompt
+```kotlin
+val selections = promptSelect {
+    this.selectionCount = 1..1
+
+    content {
+        title = "Selection"
+        description = "What's your favorite letter?"
+    }
+
+    option("A", description = "The first letter", emoji = Emojis.regionalIndicatorA.toPartialEmoji())
+    option("B", description = "The second letter", emoji = Emojis.regionalIndicatorB.toPartialEmoji())
+    option("C", description = "The third letter", emoji = Emojis.regionalIndicatorC.toPartialEmoji())
 }
 ```
 

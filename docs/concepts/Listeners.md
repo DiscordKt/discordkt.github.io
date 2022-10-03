@@ -8,4 +8,4 @@ fun demoListeners() = listeners {
 }
 ```
 
-This block listens for a single event `MessageCreateEvent` and prints the content of the message.
+This example listens for a single event `MessageCreateEvent` and prints the content of the message.

@@ -10,7 +10,7 @@ class MathService {
 }
 ```
 
- To create a service, annotate a class with `@Service`. To use it, accept it as a parameter. This can be done anywhere you might need it, such as CommandSets, Preconditions, Listeners, and even other Services. It will automatically be given wherever it is requested.
+ To create a service, annotate a class with `@Service`. DiscordKt uses dependency injection to provide access to these objects. To use it, accept it as a parameter. This can be done anywhere you might need it, such as CommandSets, Preconditions, Listeners, and even other Services. It will automatically be given wherever it is requested.
 
 ```kotlin
 @Service
