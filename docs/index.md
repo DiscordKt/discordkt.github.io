@@ -45,16 +45,14 @@ fun main(args: Array<String>) {
 
 ```Kotlin
 fun demo() = commands("Demo") {
-    command("Hello") {
-        description = "A 'Hello World' command."
+    slash("Hello", "A 'Hello World' command.") {
         execute {
             respond("Hello World!")
         }
     }
 
-    command("Add") {
-        description = "Add two numbers together."
-        execute(IntegerArg, IntegerArg) {
+    slash("Add", "Add two numbers together.") {
+        execute(IntegerArg("First"), IntegerArg("Second")) {
             val (first, second) = args
             respond(first + second)
         }
